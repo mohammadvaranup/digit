@@ -57,8 +57,8 @@ export default class WebViewContainer extends Component {
   componentDidMount() {
     //sync list
     Axios.get('http://smart-lemon.ir/bonyad/api', {withCredentials: true}).then(
-      ({data: list}) => {
-        this.setState({list});
+      ({data}) => {
+        this.setState({list: data});
       },
     );
   }
