@@ -35,14 +35,14 @@ export default class WebViewContainer extends Component {
                   style={styles.button}
                   underlayColor="#fff0"
                   onPress={() => this.onPress(i)}>
-                  <View style={styles.buttonContent}>
+                  <View style={styles.buttonView}>
                     <Image
                       source={{uri: item.icon}}
-                      style={styles.image}
+                      style={styles.buttonImage}
                       tintColor={isAactive ? '#222' : '#999'}
                     />
                     <Text
-                      style={styles.label}
+                      style={styles.buttonLabel}
                       tintColor={isAactive ? '#222' : '#999'}>
                       {item.text}
                     </Text>
@@ -102,14 +102,14 @@ const styles = StyleSheet.create({
     width: 64,
     marginTop: 12,
   },
-  buttonContent: {
+  buttonView: {
     alignItems: 'center',
   },
-  image: {
+  buttonImage: {
     height: 36,
     width: 36,
   },
-  label: {
+  buttonLabel: {
     color: '#999',
     textAlign: 'justify',
   },
