@@ -28,7 +28,7 @@ export default class AppContainer extends Component {
 
   render() {
     const {list, loaded} = this.state;
-    if (!loaded) {
+    if (loaded) {
       return (
         <>
           <StatusBar barStyle="dark-content" />
