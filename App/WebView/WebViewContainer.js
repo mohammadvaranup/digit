@@ -2,18 +2,10 @@ import React, {Component} from 'react';
 import {StyleSheet, TouchableHighlight, View, Image, Text} from 'react-native';
 
 import WebViewComponent from './WebViewComponent';
-import Axios from 'axios';
 
 export default class WebViewContainer extends Component {
   state = {
     index: 0,
-    list: [
-      {
-        text: '',
-        icon: '',
-        link: '',
-      },
-    ],
   };
 
   onPress = index => {
@@ -21,7 +13,8 @@ export default class WebViewContainer extends Component {
   };
 
   renderList = () => {
-    const {list, index} = this.state;
+    const {index} = this.state;
+    const {list} = this.props;
 
     return (
       list.length > 1 && (
@@ -55,17 +48,9 @@ export default class WebViewContainer extends Component {
     );
   };
 
-  componentDidMount() {
-    //sync list
-    Axios.get('http://smart-lemon.ir/bonyad/api', {withCredentials: true}).then(
-      ({data}) => {
-        this.setState({list: data});
-      },
-    );
-  }
-
   render() {
-    const {index, list} = this.state;
+    const {index} = this.state;
+    const {list} = this.props;
 
     return (
       <View style={styles.appContainer}>

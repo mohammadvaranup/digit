@@ -7,16 +7,10 @@
  */
 
 import React from 'react';
-import {StatusBar} from 'react-native';
-import WebViewContainer from './WebView/WebViewContainer';
+import AppContainer from './AppContainer';
 
 const App: () => React$Node = () => {
-  return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <WebViewContainer />
-    </>
-  );
+  return <AppContainer />;
 };
 
 export default App;
