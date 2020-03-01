@@ -1,4 +1,3 @@
-/*
 import firebase from 'react-native-firebase';
 
 firebase
@@ -9,4 +8,3 @@ firebase
       console.log('default app user ->', credential.user.toJSON());
     }
   });
-*/

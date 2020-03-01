@@ -21,7 +21,7 @@ export default class WebViewContainer extends Component {
         <View style={styles.navView}>
           {list.length &&
             list.map((item, i) => {
-              const isAactive = !!(index === i);
+              let isAactive = !!(index === i);
               return (
                 <TouchableHighlight
                   key={i}
@@ -69,11 +69,11 @@ const styles = StyleSheet.create({
   },
   webView: {
     height: '100%',
-    paddingBottom: 0,
+    paddingBottom: 24,
   },
   navView: {
     width: '100%',
-    height: 65,
+    height: 75,
     bottom: 0,
     position: 'absolute',
     flex: 1,

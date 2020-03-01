@@ -12,6 +12,10 @@ import java.util.List;
 
 // imports added by me
 import io.invertase.firebase.notifications.RNFirebaseNotificationsPackage; // <-- Add this line
+import io.invertase.firebase.messaging.RNFirebaseMessagingPackage; // <-- Add this line
+import io.invertase.firebase.auth.RNFirebaseAuthPackage; // <-- Add this line
+//import io.invertase.firebase.RNFirebasePackage;
+
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -28,7 +32,10 @@ public class MainApplication extends Application implements ReactApplication {
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
-          packages.add(new RNFirebaseNotificationsPackage()); // <-- Added rnfirebase by me
+          packages.add(new RNFirebaseNotificationsPackage()); // <-- Add this line
+          packages.add(new RNFirebaseMessagingPackage()); // <-- Add this line
+          packages.add(new RNFirebaseAuthPackage()); // <-- Add this line
+          //packages.add(new RNFirebasePackage()); // <-- override prob
           return packages;
         }
 

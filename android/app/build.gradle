@@ -133,6 +133,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true  // added by me
     }
     splits {
         abi {
@@ -187,15 +188,26 @@ android {
 }
 
 dependencies {
+    // added by me
+    compile(project(':react-native-firebase')) {   
+       transitive = false
+    }
+
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
-    // Firebase implementation added by me
+    //// Firebase implementation added by me
     //// This should be here already
 
     //// Firebase dependencies
     implementation "com.google.android.gms:play-services-base:16.1.0"
     implementation "com.google.firebase:firebase-core:16.0.9"
+
+    // added by me
+    implementation 'androidx.multidex:multidex:2.0.1' //for multidex by me
+    implementation "com.google.firebase:firebase-auth:17.0.0" // by me
+    implementation "com.google.firebase:firebase-messaging:18.0.0" // by me
+    implementation 'com.google.firebase:firebase-inappmessaging-display:17.2.0' // by me
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
