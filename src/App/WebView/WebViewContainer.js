@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   },
   navView: {
     width: '100%',
-    height: 95,
+    height: 65,
     bottom: 0,
     position: 'absolute',
     flex: 1,

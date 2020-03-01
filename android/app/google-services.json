@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "630005308979",
+    "firebase_url": "https://bonyadvokala-5b5c3.firebaseio.com",
+    "project_id": "bonyadvokala-5b5c3",
+    "storage_bucket": "bonyadvokala-5b5c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630005308979:android:e63b70900e6299ca37cd46",
+        "android_client_info": {
+          "package_name": "com.digit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630005308979-1q09a5d413k629lcv6f58760b8na6pc2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digit",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "630005308979-ahvns7enq5n0cih5mhstpqb3tce44v39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9qFJpDRJnEk2PLl3D9eGy4ADedeRRNc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630005308979-ahvns7enq5n0cih5mhstpqb3tce44v39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
